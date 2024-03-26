@@ -2,6 +2,7 @@ package hexlet.code.interfaces;
 
 import hexlet.code.games.Calculator;
 import hexlet.code.games.Even;
+import hexlet.code.games.GreatestCommonDivider;
 
 import java.util.Scanner;
 
@@ -28,6 +29,9 @@ public class App {
                 break;
             case "3":
                 Calculator.launchExpressionGame();
+                break;
+            case "4":
+                GreatestCommonDivider.launchGCDGame();
                 break;
             case "0":
                 break;

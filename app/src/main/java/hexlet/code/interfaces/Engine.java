@@ -15,11 +15,12 @@ public class Engine {
     }
 
     private static void checkResponseCorrectness(String[][] gameData) {
-        String answer;
-        String correctAnswer;
 
         int userWinsCount = 0;
         for (String[] gameDatum : gameData) {
+            String correctAnswer;
+            String answer;
+
             String question = gameDatum[0];
             System.out.println("Question: " + question);
             System.out.print("Your answer: ");
