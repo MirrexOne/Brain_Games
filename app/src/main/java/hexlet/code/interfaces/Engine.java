@@ -7,13 +7,17 @@ public class Engine {
     private static final Scanner SCANNER = new Scanner(System.in);
     private static String username;
 
-    public static void checkResponseCorrectness(String gameTitle, String[][] gameData) {
-        gamesPresentation();
+    public static void launchEngine(String gameRules, String[][] gameData) {
+        System.out.println("\n" + "Welcome to the Brain Games!");
         userNameRequest();
-        outputGameRules(gameTitle);
+        System.out.println(gameRules);
+        checkResponseCorrectness(gameData);
+    }
 
+    private static void checkResponseCorrectness(String[][] gameData) {
         String answer;
         String correctAnswer;
+
         int userWinsCount = 0;
         for (String[] gameDatum : gameData) {
             String question = gameDatum[0];
@@ -38,10 +42,6 @@ public class Engine {
         }
     }
 
-    private static void gamesPresentation() {
-        System.out.println("\n" + "Welcome to the Brain Games!");
-
-    }
 
     private static void userNameRequest() {
         System.out.print("May I have your name? ");
@@ -50,7 +50,4 @@ public class Engine {
 
     }
 
-    private static void outputGameRules(String gameTitle) {
-        System.out.println(gameTitle);
-    }
 }

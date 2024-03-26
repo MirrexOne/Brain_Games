@@ -1,6 +1,8 @@
 package hexlet.code.interfaces;
 
+import hexlet.code.games.Calculator;
 import hexlet.code.games.Even;
+
 import java.util.Scanner;
 
 
@@ -22,10 +24,16 @@ public class App {
                 Cli.greeting();
                 break;
             case "2":
-                Even.evenGameStart();
+                Even.launchEvenGame();
+                break;
+            case "3":
+                Calculator.launchExpressionGame();
+                break;
+            case "0":
                 break;
             default:
                 System.out.println("Nonexistent selection. Please, try again.");
+                break;
         }
 
     }
