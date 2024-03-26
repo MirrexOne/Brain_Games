@@ -8,7 +8,12 @@ public class Even {
 
     private static final String GAME_RULES_DESCRIPTION = "Answer 'yes' if the number is even, otherwise answer 'no'.";
 
-    public static void evenGameStart() {
+    public static void launchEvenGame() {
+        String[][] gameData = generateGameData();
+        Engine.launchEngine(GAME_RULES_DESCRIPTION, gameData);
+    }
+
+    private static String[][] generateGameData() {
         String[][] gameData = new String[3][2];
 
         for (int i = 0; i < gameData.length; i++) {
@@ -18,7 +23,7 @@ public class Even {
             gameData[i][1] = correctAnswer;
 
         }
-        Engine.checkResponseCorrectness(GAME_RULES_DESCRIPTION, gameData);
+        return gameData;
     }
 
     static String providesCorrectAnswer(String question) {
