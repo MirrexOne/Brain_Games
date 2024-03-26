@@ -3,3 +3,4 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/48b174ec91569a00fac3/maintainability)](https://codeclimate.com/github/MirrexOne/java-project-61/maintainability)
 # Project steps:
 ## Step 1: [Even game](https://asciinema.org/a/7hApRf04PvCpueiSXNI2JmKPj)
+## Step 2: [Calculator game](https://asciinema.org/a/FTvII0676knnsVjRuiUMPG9fk)
