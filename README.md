@@ -4,3 +4,4 @@
 # Project steps:
 ## Step 1: [Even game](https://asciinema.org/a/7hApRf04PvCpueiSXNI2JmKPj)
 ## Step 2: [Calculator game](https://asciinema.org/a/FTvII0676knnsVjRuiUMPG9fk)
+## Step 3: [Greatest common divisor game](https://asciinema.org/a/ysdhmSzocgePMDRknEx1OcTyu)
