@@ -33,7 +33,7 @@ public class GreatestCommonDivider {
         }
         boolean hasRemainder = true;
 
-        int reminder = 0;
+        int reminder;
         int greatestCommonDivisor = 0;
         while (hasRemainder) {
             reminder = randomOperands[0] % randomOperands[1];
