@@ -1,5 +1,6 @@
 package hexlet.code.interfaces;
 
+import hexlet.code.games.ArithmeticProgression;
 import hexlet.code.games.Calculator;
 import hexlet.code.games.Even;
 import hexlet.code.games.GreatestCommonDivider;
@@ -32,6 +33,9 @@ public class App {
                 break;
             case "4":
                 GreatestCommonDivider.launchGCDGame();
+                break;
+            case "5":
+                ArithmeticProgression.launchExpressionGame();
                 break;
             case "0":
                 break;
