@@ -12,4 +12,8 @@ public class Utils {
     public static int generateRandomNumber(int upperBound) {
         return RANDOM.nextInt(0, upperBound);
     }
+
+    public static int generateRandomNumber(int lowerBound, int upperBound) {
+        return RANDOM.nextInt(lowerBound, upperBound);
+    }
 }
