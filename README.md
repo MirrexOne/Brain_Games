@@ -6,4 +6,5 @@
 ## Step 2: [Calculator game](https://asciinema.org/a/FTvII0676knnsVjRuiUMPG9fk)
 ## Step 3: [Greatest common divisor game](https://asciinema.org/a/ysdhmSzocgePMDRknEx1OcTyu)
 ## Step 4: [Arithmetic progression game](https://asciinema.org/a/CDMGkH7ItCB1saTMyjw7pplEp)
+## Step 5: [Prime number game](https://asciinema.org/a/HZMMEWssEGHNwFIuKd8MNkz7m)
 
