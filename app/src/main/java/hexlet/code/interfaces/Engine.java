@@ -29,7 +29,7 @@ public class Engine {
 
             if (!answer.equals(correctAnswer)) {
                 System.out.println("'" + answer + "'" + " is wrong answer ;(. Correct answer was "
-                        + "'" + correctAnswer + "'.\n" + "Let's try again, " + username);
+                        + "'" + correctAnswer + "'.\n" + "Let's try again, " + username + "!");
                 break;
             } else {
                 userWinsCount++;
