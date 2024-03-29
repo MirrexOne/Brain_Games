@@ -8,6 +8,11 @@ import java.lang.reflect.Array;
 public class ArithmeticProgression {
 
     private static final String GAME_RULES_DESCRIPTION = "What number is missing in the progression?";
+    private static final int QUANTITY_OF_QUESTIONS = 3;
+    private static final int PAIRS_QUESTION_ANSWER = 2;
+    private static final int LOWER_BOUND_SIZE = 5;
+    private static final int UPPER_BOUND_SIZE = 10;
+    private static final int GENERATION_CAP_DIFFERENCE = 5;
 
     public static void launchExpressionGame() {
         String[][] gameData = generateGameData();
@@ -15,9 +20,7 @@ public class ArithmeticProgression {
     }
 
     private static String[][] generateGameData() {
-        int quantityOfQuestions = 3;
-        int pairsQuestionAnswer = 2;
-        String[][] gameData = new String[quantityOfQuestions][pairsQuestionAnswer];
+        String[][] gameData = new String[QUANTITY_OF_QUESTIONS][PAIRS_QUESTION_ANSWER];
 
         for (int i = 0; i < gameData.length; i++) {
             String[] progression = generateProgression();
@@ -32,12 +35,9 @@ public class ArithmeticProgression {
     }
 
     private static String[] generateProgression() {
-        int lowerBoundSize = 5;
-        int upperBoundSize = 10;
-        int generationCapDifference = 5;
 
-        int randomSequenceSize = Utils.generateRandomNumber(lowerBoundSize, upperBoundSize);
-        int randomCommonDifference = Utils.generateRandomNumber(generationCapDifference);
+        int randomSequenceSize = Utils.generateRandomNumber(LOWER_BOUND_SIZE, UPPER_BOUND_SIZE);
+        int randomCommonDifference = Utils.generateRandomNumber(GENERATION_CAP_DIFFERENCE);
 
         StringBuilder progression = new StringBuilder();
         int nextValue;

@@ -5,7 +5,8 @@ import hexlet.code.interfaces.Utils;
 
 public class Calculator {
     private static final String GAME_RULES_DESCRIPTION = "What is the result of the expression?";
-
+    private static final int QUANTITY_OF_QUESTIONS = 3;
+    private static final int PAIRS_QUESTION_ANSWER = 2;
 
     public static void launchExpressionGame() {
         String[][] gameData = generateGameData();
@@ -13,9 +14,7 @@ public class Calculator {
     }
 
     private static String[][] generateGameData() {
-        int quantityOfQuestions = 3;
-        int pairsQuestionAnswer = 2;
-        String[][] gameData = new String[quantityOfQuestions][pairsQuestionAnswer];
+        String[][] gameData = new String[QUANTITY_OF_QUESTIONS][PAIRS_QUESTION_ANSWER];
 
         for (int i = 0; i < gameData.length; i++) {
             int[] randomNumbers = new int[]{Utils.generateRandomNumber(), Utils.generateRandomNumber()};

@@ -7,16 +7,15 @@ import hexlet.code.interfaces.Utils;
 public class Even {
 
     private static final String GAME_RULES_DESCRIPTION = "Answer 'yes' if the number is even, otherwise answer 'no'.";
-
+    private static final int QUANTITY_OF_QUESTIONS = 3;
+    private static final int PAIRS_QUESTION_ANSWER = 2;
     public static void launchEvenGame() {
         String[][] gameData = generateGameData();
         Engine.launchEngine(GAME_RULES_DESCRIPTION, gameData);
     }
 
     private static String[][] generateGameData() {
-        int quantityOfQuestions = 3;
-        int pairsQuestionAnswer = 2;
-        String[][] gameData = new String[quantityOfQuestions][pairsQuestionAnswer];
+        String[][] gameData = new String[QUANTITY_OF_QUESTIONS][PAIRS_QUESTION_ANSWER];
 
         for (int i = 0; i < gameData.length; i++) {
             String question = String.valueOf(Utils.generateRandomNumber());
