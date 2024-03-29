@@ -49,7 +49,7 @@ public class ArithmeticProgression {
     private static String convertToString(String[] progressionArray) {
         StringBuilder builder = new StringBuilder();
         for (String value : progressionArray) {
-            builder.append(" ").append(value);
+            builder.append(value).append(" ");
         }
         return builder.toString();
     }
