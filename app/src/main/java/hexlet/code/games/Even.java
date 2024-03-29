@@ -14,7 +14,9 @@ public class Even {
     }
 
     private static String[][] generateGameData() {
-        String[][] gameData = new String[3][2];
+        int quantityOfQuestions = 3;
+        int pairsQuestionAnswer = 2;
+        String[][] gameData = new String[quantityOfQuestions][pairsQuestionAnswer];
 
         for (int i = 0; i < gameData.length; i++) {
             String question = String.valueOf(Utils.generateRandomNumber());

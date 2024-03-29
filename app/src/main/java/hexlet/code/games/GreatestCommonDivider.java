@@ -12,7 +12,9 @@ public class GreatestCommonDivider {
     }
 
     private static String[][] generateGameData() {
-        String[][] gameData = new String[3][2];
+        int quantityOfQuestions = 3;
+        int pairsQuestionAnswer = 2;
+        String[][] gameData = new String[quantityOfQuestions][pairsQuestionAnswer];
 
         for (int i = 0; i < gameData.length; i++) {
             int[] randomNumbers = new int[]{Utils.generateRandomNumber(), Utils.generateRandomNumber()};

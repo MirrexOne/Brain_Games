@@ -15,7 +15,9 @@ public class ArithmeticProgression {
     }
 
     private static String[][] generateGameData() {
-        String[][] gameData = new String[3][2];
+        int quantityOfQuestions = 3;
+        int pairsQuestionAnswer = 2;
+        String[][] gameData = new String[quantityOfQuestions][pairsQuestionAnswer];
 
         for (int i = 0; i < gameData.length; i++) {
             String[] progression = generateProgression();
@@ -30,8 +32,12 @@ public class ArithmeticProgression {
     }
 
     private static String[] generateProgression() {
-        int randomSequenceSize = Utils.generateRandomNumber(5, 10);
-        int randomCommonDifference = Utils.generateRandomNumber(5);
+        int lowerBoundSize = 5;
+        int upperBoundSize = 10;
+        int generationCapDifference = 5;
+
+        int randomSequenceSize = Utils.generateRandomNumber(lowerBoundSize, upperBoundSize);
+        int randomCommonDifference = Utils.generateRandomNumber(generationCapDifference);
 
         StringBuilder progression = new StringBuilder();
         int nextValue;

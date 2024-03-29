@@ -13,10 +13,13 @@ public class PrimeNumber {
     }
 
     private static String[][] generateGameData() {
-        String[][] gameData = new String[3][2];
+        int quantityOfQuestions = 3;
+        int pairsQuestionAnswer = 2;
+        String[][] gameData = new String[quantityOfQuestions][pairsQuestionAnswer];
 
         for (int i = 0; i < gameData.length; i++) {
-            int randomNumber = Utils.generateRandomNumber(1, 102);
+            int capNumberGeneration = 102;
+            int randomNumber = Utils.generateRandomNumber(1, capNumberGeneration);
             String question = String.valueOf(randomNumber);
             String correctAnswer = isPrime(randomNumber) ? "yes" : "no";
             gameData[i][0] = question;
