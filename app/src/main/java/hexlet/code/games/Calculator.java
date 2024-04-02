@@ -17,11 +17,11 @@ public class Calculator {
         String[][] gameData = new String[QUANTITY_OF_QUESTIONS][PAIRS_QUESTION_ANSWER];
 
         for (int i = 0; i < gameData.length; i++) {
-            int randomNumberOne = Utils.generateRandomNumber();
-            int randomNumberTwo = Utils.generateRandomNumber();
+            int numberOne = Utils.generateRandomNumber();
+            int numberTwo = Utils.generateRandomNumber();
             String randomAction = generateRandomAction();
-            String correctAnswer = String.valueOf(providesCorrectAnswer(randomAction, randomNumberOne, randomNumberTwo));
-            gameData[i][0] = randomNumberOne + randomAction + randomNumberTwo;
+            String correctAnswer = String.valueOf(providesCorrectAnswer(randomAction, numberOne, numberTwo));
+            gameData[i][0] = numberOne + randomAction + numberTwo;
             gameData[i][1] = correctAnswer;
 
         }
