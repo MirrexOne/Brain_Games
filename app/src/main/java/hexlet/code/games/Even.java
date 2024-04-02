@@ -18,17 +18,17 @@ public class Even {
         String[][] gameData = new String[QUANTITY_OF_QUESTIONS][PAIRS_QUESTION_ANSWER];
 
         for (int i = 0; i < gameData.length; i++) {
-            String question = String.valueOf(Utils.generateRandomNumber());
+            int question = Utils.generateRandomNumber();
             String correctAnswer = providesCorrectAnswer(question) ? "yes" : "no";
-            gameData[i][0] = question;
+            gameData[i][0] = String.valueOf(question);
             gameData[i][1] = correctAnswer;
 
         }
         return gameData;
     }
 
-    static boolean providesCorrectAnswer(String question) {
-        return Integer.parseInt(question) % 2 == 0;
+    static boolean providesCorrectAnswer(int number) {
+        return number % 2 == 0;
     }
 
 }
