@@ -23,7 +23,9 @@ public class ArithmeticProgression {
         String[][] gameData = new String[QUANTITY_OF_QUESTIONS][PAIRS_QUESTION_ANSWER];
 
         for (int i = 0; i < gameData.length; i++) {
-            String[] progression = generateProgression();
+            int sequenceStep = Utils.generateRandomNumber(GENERATION_CAP_DIFFERENCE);
+            int progressionSize = Utils.generateRandomNumber(LOWER_BOUND_SIZE, UPPER_BOUND_SIZE);
+            String[] progression = generateProgression(Utils.generateRandomNumber(), sequenceStep, progressionSize);
             int randomIndex = Utils.generateRandomNumber(progression.length);
             String correctHiddenNumber = (String) Array.get(progression, randomIndex);
             String question = convertToString(progression).replace(correctHiddenNumber, "..");
@@ -34,20 +36,17 @@ public class ArithmeticProgression {
         return gameData;
     }
 
-    private static String[] generateProgression() {
+    private static String[] generateProgression(int initialValue, int difference, int progressionLength) {
 
-        int randomSequenceSize = Utils.generateRandomNumber(LOWER_BOUND_SIZE, UPPER_BOUND_SIZE);
-        int randomCommonDifference = Utils.generateRandomNumber(GENERATION_CAP_DIFFERENCE);
 
         StringBuilder progression = new StringBuilder();
         int nextValue;
-        int numberSequence = Utils.generateRandomNumber();
-        progression.append(numberSequence);
-        nextValue = numberSequence;
-        while (randomSequenceSize != 0) {
-            nextValue += randomCommonDifference;
+        progression.append(initialValue);
+        nextValue = initialValue;
+        while (progressionLength != 0) {
+            nextValue += difference;
             progression.append(" ").append(nextValue);
-            randomSequenceSize--;
+            progressionLength--;
         }
         return progression.toString().split(" ");
     }
