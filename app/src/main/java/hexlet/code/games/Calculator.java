@@ -17,10 +17,11 @@ public class Calculator {
         String[][] gameData = new String[QUANTITY_OF_QUESTIONS][PAIRS_QUESTION_ANSWER];
 
         for (int i = 0; i < gameData.length; i++) {
-            int[] randomNumbers = new int[]{Utils.generateRandomNumber(), Utils.generateRandomNumber()};
+            int randomNumberOne = Utils.generateRandomNumber();
+            int randomNumberTwo = Utils.generateRandomNumber();
             String randomAction = generateRandomAction();
-            String correctAnswer = String.valueOf(providesCorrectAnswer(randomAction, randomNumbers));
-            gameData[i][0] = randomNumbers[0] + randomAction + randomNumbers[1];
+            String correctAnswer = String.valueOf(providesCorrectAnswer(randomAction, randomNumberOne, randomNumberTwo));
+            gameData[i][0] = randomNumberOne + randomAction + randomNumberTwo;
             gameData[i][1] = correctAnswer;
 
         }
@@ -33,15 +34,12 @@ public class Calculator {
         return setOfActions[index];
     }
 
-    private static int providesCorrectAnswer(String action, int[] randomNumbers) {
-        int correctResult = 0;
-        if (action.equals(" + ")) {
-            correctResult = randomNumbers[0] + randomNumbers[1];
-        } else if (action.equals(" - ")) {
-            correctResult = randomNumbers[0] - randomNumbers[1];
-        } else if (action.equals(" * ")) {
-            correctResult = randomNumbers[0] * randomNumbers[1];
-        }
-        return correctResult;
+    private static int providesCorrectAnswer(String action, int numberOne, int numberTwo) {
+        return switch (action) {
+            case " + " -> numberOne + numberTwo;
+            case " - " -> numberOne - numberTwo;
+            case " * " -> numberOne * numberTwo;
+            default -> throw new RuntimeException("Undefined operation");
+        };
     }
 }
