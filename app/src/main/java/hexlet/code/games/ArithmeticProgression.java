@@ -16,7 +16,7 @@ public class ArithmeticProgression {
 
     public static void launchExpressionGame() {
         String[][] gameData = generateGameData();
-        Engine.launchEngine(GAME_RULES_DESCRIPTION, gameData);
+        Engine.checkResponseCorrectness(GAME_RULES_DESCRIPTION, gameData);
     }
 
     private static String[][] generateGameData() {

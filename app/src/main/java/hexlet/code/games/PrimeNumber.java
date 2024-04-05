@@ -12,7 +12,7 @@ public class PrimeNumber {
 
     public static void launchEvenGame() {
         String[][] gameData = generateGameData();
-        Engine.launchEngine(GAME_RULES_DESCRIPTION, gameData);
+        Engine.checkResponseCorrectness(GAME_RULES_DESCRIPTION, gameData);
     }
 
     private static String[][] generateGameData() {
