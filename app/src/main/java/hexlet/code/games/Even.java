@@ -19,7 +19,7 @@ public class Even {
 
         for (int i = 0; i < gameData.length; i++) {
             int question = Utils.generateRandomNumber();
-            String correctAnswer = providesCorrectAnswer(question) ? "yes" : "no";
+            String correctAnswer = isEven(question) ? "yes" : "no";
             gameData[i][0] = String.valueOf(question);
             gameData[i][1] = correctAnswer;
 
@@ -27,7 +27,7 @@ public class Even {
         return gameData;
     }
 
-    static boolean providesCorrectAnswer(int number) {
+    static boolean isEven(int number) {
         return number % 2 == 0;
     }
 
