@@ -25,7 +25,8 @@ public class Engine {
             correctAnswer = gameDatum[1];
 
             if (!answer.equals(correctAnswer)) {
-                System.out.println("'" + answer + "'" + " is wrong answer ;(. Correct answer was " + "'" + correctAnswer + "'.\n" + "Let's try again, " + username + "!");
+                System.out.println("'" + answer + "'" + " is wrong answer ;(. Correct answer was " +
+                        "'" + correctAnswer + "'.\n" + "Let's try again, " + username + "!");
                 return;
             } else {
                 userWinsCount++;
