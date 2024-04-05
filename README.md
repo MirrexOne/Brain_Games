@@ -5,7 +5,7 @@
 ## **Introducing to the project**
 ###### *What this project is ?*
 This project is soft-training tool for your *brain*.  
-It has fewer simple games, that provide different ways to stretch your *mind*.
+It has a few simple games, that provide different ways to stretch your *mind*.
 
 ### Project steps:
 ### Step 1: Even game
