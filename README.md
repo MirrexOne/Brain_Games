@@ -7,6 +7,15 @@
 This project is soft-training tool for your *brain*.  
 It has a few simple games, that provide different ways to stretch your *mind*.
 
+###### *What type of games are featured in the project ?*
+Math-based games, rounds that present questions with expressions.
+
+###### *What are the rules of the games ?*
+The rules are incredibly easy, simple and clear.  
+1. To win the game, you need to win three rounds in a row;
+2. If you are defeated in a round, you have lost the game.
+
+
 ### Project steps:
 ### Step 1: Even game
 [![asciicast](https://asciinema.org/a/7hApRf04PvCpueiSXNI2JmKPj.svg)](https://asciinema.org/a/7hApRf04PvCpueiSXNI2JmKPj)
