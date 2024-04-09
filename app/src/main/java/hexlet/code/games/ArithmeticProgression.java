@@ -34,17 +34,16 @@ public class ArithmeticProgression {
         return gameData;
     }
 
-    private static String[] generateProgression(int initialValue, int difference, int progressionLength) {
-        StringBuilder progression = new StringBuilder();
-        int nextValue;
-        progression.append(initialValue);
-        nextValue = initialValue;
-        while (progressionLength != 0) {
-            nextValue += difference;
-            progression.append(" ").append(nextValue);
-            progressionLength--;
+    public static String[] generateProgression(int initialValue, int difference, int progressionLength) {
+
+
+        String[] progression = new String[progressionLength];
+
+        for (int i = 0; i < progressionLength; i += 1) {
+            progression[i] = Integer.toString(initialValue + i * difference);
         }
-        return progression.toString().split(" ");
+
+        return progression;
     }
 
     private static String convertToString(String[] progressionArray) {
