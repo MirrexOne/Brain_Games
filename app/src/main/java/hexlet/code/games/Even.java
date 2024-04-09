@@ -1,8 +1,8 @@
 package hexlet.code.games;
 
 
-import hexlet.code.interfaces.Engine;
-import hexlet.code.interfaces.Utils;
+import hexlet.code.Engine;
+import hexlet.code.Utils;
 
 public class Even {
 

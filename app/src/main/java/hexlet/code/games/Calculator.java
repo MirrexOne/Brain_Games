@@ -1,7 +1,7 @@
 package hexlet.code.games;
 
-import hexlet.code.interfaces.Engine;
-import hexlet.code.interfaces.Utils;
+import hexlet.code.Engine;
+import hexlet.code.Utils;
 
 public class Calculator {
     private static final String GAME_RULES_DESCRIPTION = "What is the result of the expression?";

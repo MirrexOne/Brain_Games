@@ -1,4 +1,4 @@
-package hexlet.code.interfaces;
+package hexlet.code;
 
 import hexlet.code.games.ArithmeticProgression;
 import hexlet.code.games.Calculator;

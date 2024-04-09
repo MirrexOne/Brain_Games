@@ -1,7 +1,7 @@
 package hexlet.code.games;
 
-import hexlet.code.interfaces.Engine;
-import hexlet.code.interfaces.Utils;
+import hexlet.code.Engine;
+import hexlet.code.Utils;
 
 public class GreatestCommonDivider {
     private static final String GAME_RULES_DESCRIPTION = "Find the greatest common divisor of given numbers.";
@@ -53,7 +53,7 @@ public class GreatestCommonDivider {
     private static int[] swapNumbers(int dividend, int divisor) {
         int[] dividendAndDivisor = new int[]{dividend, divisor};
 
-        int temporaryStorage = 0;
+        int temporaryStorage;
         if (isDividendLess(dividend, divisor)) {
             temporaryStorage = dividendAndDivisor[0];
             dividendAndDivisor[0] = divisor;
