@@ -3,9 +3,6 @@ package hexlet.code.games;
 import hexlet.code.Engine;
 import hexlet.code.Utils;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
-
 public class ArithmeticProgression {
 
     private static final String GAME_RULES_DESCRIPTION = "What number is missing in the progression?";
