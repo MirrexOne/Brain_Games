@@ -8,6 +8,7 @@ public class GreatestCommonDivider {
 
     private static final int QUANTITY_OF_QUESTIONS = Engine.POINTS_TO_WIN;
     private static final int PAIRS_QUESTION_ANSWER = 2;
+
     public static void launchGCDGame() {
         String[][] gameData = generateGameData();
         Engine.checkResponseCorrectness(GAME_RULES_DESCRIPTION, gameData);
@@ -28,41 +29,7 @@ public class GreatestCommonDivider {
     }
 
     private static int searchCommonDivisor(int dividend, int divisor) {
-        int[] randomOperands = new int[]{dividend, divisor};
-
-        if (isDividendLess(dividend, divisor)) {
-            randomOperands = swapNumbers(dividend, divisor);
-        }
-        boolean hasRemainder = true;
-
-        int reminder;
-        int greatestCommonDivisor = 0;
-        while (hasRemainder) {
-            reminder = randomOperands[0] % randomOperands[1];
-            if (reminder == 0) {
-                hasRemainder = false;
-                greatestCommonDivisor = randomOperands[1];
-            } else {
-                randomOperands[0] = randomOperands[1];
-                randomOperands[1] = reminder;
-            }
-        }
-        return greatestCommonDivisor;
+        return divisor == 0 ? dividend : searchCommonDivisor(divisor, dividend % divisor);
     }
 
-    private static int[] swapNumbers(int dividend, int divisor) {
-        int[] dividendAndDivisor = new int[]{dividend, divisor};
-
-        int temporaryStorage;
-        if (isDividendLess(dividend, divisor)) {
-            temporaryStorage = dividendAndDivisor[0];
-            dividendAndDivisor[0] = divisor;
-            dividendAndDivisor[1] = temporaryStorage;
-        }
-        return dividendAndDivisor;
-    }
-
-    private static boolean isDividendLess(int dividend, int divisor) {
-        return dividend < divisor;
-    }
 }
