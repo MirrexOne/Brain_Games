@@ -33,9 +33,10 @@ public class Engine {
                 System.out.println("Correct!");
             }
 
-            if (userWinsCount == POINTS_TO_WIN) {
-                System.out.println("Congratulations, " + username + "!");
-            }
+        }
+
+        if (userWinsCount == POINTS_TO_WIN) {
+            System.out.println("Congratulations, " + username + "!");
         }
     }
 }
