@@ -1,7 +1,7 @@
 package hexlet.code.games;
 
-import hexlet.code.interfaces.Engine;
-import hexlet.code.interfaces.Utils;
+import hexlet.code.Engine;
+import hexlet.code.Utils;
 
 import java.lang.reflect.Array;
 
@@ -37,8 +37,6 @@ public class ArithmeticProgression {
     }
 
     private static String[] generateProgression(int initialValue, int difference, int progressionLength) {
-
-
         StringBuilder progression = new StringBuilder();
         int nextValue;
         progression.append(initialValue);
