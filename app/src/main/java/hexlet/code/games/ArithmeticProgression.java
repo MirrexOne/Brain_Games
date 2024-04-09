@@ -6,7 +6,7 @@ import hexlet.code.Utils;
 public class ArithmeticProgression {
 
     private static final String GAME_RULES_DESCRIPTION = "What number is missing in the progression?";
-    private static final int QUANTITY_OF_QUESTIONS = 3;
+    private static final int QUANTITY_OF_QUESTIONS = Engine.POINTS_TO_WIN;
     private static final int PAIRS_QUESTION_ANSWER = 2;
     private static final int LOWER_BOUND_SIZE = 5;
     private static final int UPPER_BOUND_SIZE = 10;

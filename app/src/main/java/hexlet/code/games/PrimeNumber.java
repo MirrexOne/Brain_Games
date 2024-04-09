@@ -7,7 +7,7 @@ public class PrimeNumber {
     private static final String GAME_RULES_DESCRIPTION = "Answer 'yes' if given number is prime. "
             + "Otherwise answer 'no'.";
     private static final int CAP_NUMBER_GENERATION = 102;
-    private static final int QUANTITY_OF_QUESTIONS = 3;
+    private static final int QUANTITY_OF_QUESTIONS = Engine.POINTS_TO_WIN;
     private static final int PAIRS_QUESTION_ANSWER = 2;
 
     public static void launchEvenGame() {

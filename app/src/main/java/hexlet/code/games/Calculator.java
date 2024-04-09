@@ -5,7 +5,7 @@ import hexlet.code.Utils;
 
 public class Calculator {
     private static final String GAME_RULES_DESCRIPTION = "What is the result of the expression?";
-    private static final int QUANTITY_OF_QUESTIONS = 3;
+    private static final int QUANTITY_OF_QUESTIONS = Engine.POINTS_TO_WIN;
     private static final int PAIRS_QUESTION_ANSWER = 2;
     private static final String[] SET_OF_ACTIONS = {" + ", " - ", " * "};
 

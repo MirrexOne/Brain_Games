@@ -6,7 +6,7 @@ import hexlet.code.Utils;
 public class GreatestCommonDivider {
     private static final String GAME_RULES_DESCRIPTION = "Find the greatest common divisor of given numbers.";
 
-    private static final int QUANTITY_OF_QUESTIONS = 3;
+    private static final int QUANTITY_OF_QUESTIONS = Engine.POINTS_TO_WIN;
     private static final int PAIRS_QUESTION_ANSWER = 2;
     public static void launchGCDGame() {
         String[][] gameData = generateGameData();
