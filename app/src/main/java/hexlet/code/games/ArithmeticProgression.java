@@ -35,8 +35,6 @@ public class ArithmeticProgression {
     }
 
     public static String[] generateProgression(int initialValue, int difference, int progressionLength) {
-
-
         String[] progression = new String[progressionLength];
 
         for (int i = 0; i < progressionLength; i += 1) {
@@ -48,9 +46,11 @@ public class ArithmeticProgression {
 
     private static String convertToString(String[] progressionArray) {
         StringBuilder builder = new StringBuilder();
+
         for (String value : progressionArray) {
             builder.append(value).append(" ");
         }
+
         return builder.toString();
     }
 
