@@ -4,6 +4,7 @@ import hexlet.code.Engine;
 import hexlet.code.Utils;
 
 import java.lang.reflect.Array;
+import java.util.Arrays;
 
 public class ArithmeticProgression {
 
@@ -27,10 +28,10 @@ public class ArithmeticProgression {
             int progressionSize = Utils.generateRandomNumber(LOWER_BOUND_SIZE, UPPER_BOUND_SIZE);
             String[] progression = generateProgression(Utils.generateRandomNumber(), sequenceStep, progressionSize);
             int randomIndex = Utils.generateRandomNumber(progression.length);
-            String correctHiddenNumber = (String) Array.get(progression, randomIndex);
-            String question = convertToString(progression).replace(correctHiddenNumber, "..");
-            gameData[i][0] = question;
-            gameData[i][1] = correctHiddenNumber;
+            String correctHiddenElement = progression[randomIndex];
+            progression[randomIndex] = "..";
+            gameData[i][0] = convertToString(progression);
+            gameData[i][1] = correctHiddenElement;
 
         }
         return gameData;
