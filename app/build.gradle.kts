@@ -24,5 +24,5 @@ tasks.getByName("run", JavaExec::class) {
 }
 
 application {
-    mainClass = "hexlet.code.interfaces.App"
+    mainClass = "hexlet.code.App"
 }
