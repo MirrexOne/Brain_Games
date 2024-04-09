@@ -37,16 +37,13 @@ public class PrimeNumber {
             return false;
         }
 
-        boolean result = true;
-        int initialValue = 2;
-        while (initialValue <= roundToFloor) {
+        for (int initialValue = 2; initialValue <= roundToFloor; initialValue++) {
             if (randomNumber % initialValue == 0) {
-                result = false;
-                break;
+                return false;
             }
-            initialValue++;
         }
-        return result;
+
+        return true;
     }
 }
 
