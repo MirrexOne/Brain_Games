@@ -24,20 +24,19 @@ public class PrimeNumber {
             String correctAnswer = isPrime(randomNumber) ? "yes" : "no";
             gameData[i][0] = question;
             gameData[i][1] = correctAnswer;
-
         }
+
         return gameData;
     }
 
     private static boolean isPrime(int randomNumber) {
         double root = Math.sqrt(randomNumber);
-        int roundToFloor = (int) Math.floor(root);
 
         if (randomNumber <= 1) {
             return false;
         }
 
-        for (int initialValue = 2; initialValue <= roundToFloor; initialValue++) {
+        for (int initialValue = 2; initialValue <= (int) Math.floor(root); initialValue++) {
             if (randomNumber % initialValue == 0) {
                 return false;
             }
@@ -46,4 +45,3 @@ public class PrimeNumber {
         return true;
     }
 }
-

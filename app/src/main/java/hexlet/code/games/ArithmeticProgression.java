@@ -29,8 +29,8 @@ public class ArithmeticProgression {
             progression[randomIndex] = "..";
             gameData[i][0] = String.join(" ", progression);
             gameData[i][1] = correctHiddenElement;
-
         }
+
         return gameData;
     }
 
@@ -43,5 +43,4 @@ public class ArithmeticProgression {
 
         return progression;
     }
-
 }

@@ -5,7 +5,6 @@ import hexlet.code.Utils;
 
 public class GreatestCommonDivider {
     private static final String GAME_RULES_DESCRIPTION = "Find the greatest common divisor of given numbers.";
-
     private static final int QUANTITY_OF_QUESTIONS = Engine.POINTS_TO_WIN;
     private static final int PAIRS_QUESTION_ANSWER = 2;
 
@@ -23,13 +22,12 @@ public class GreatestCommonDivider {
             String correctAnswer = String.valueOf(searchCommonDivisor(randomNumbers[0], randomNumbers[1]));
             gameData[i][0] = randomOperands;
             gameData[i][1] = correctAnswer;
-
         }
+
         return gameData;
     }
 
     private static int searchCommonDivisor(int dividend, int divisor) {
         return divisor == 0 ? dividend : searchCommonDivisor(divisor, dividend % divisor);
     }
-
 }

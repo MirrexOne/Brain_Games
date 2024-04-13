@@ -6,7 +6,6 @@ public class Engine {
     public static final int POINTS_TO_WIN = 3;
     private static final Scanner SCANNER = new Scanner(System.in);
 
-
     public static void checkResponseCorrectness(String gameRules, String[][] gameData) {
         System.out.println("\n" + "Welcome to the Brain Games!");
         System.out.print("May I have your name? ");
@@ -30,7 +29,6 @@ public class Engine {
             } else {
                 System.out.println("Correct!");
             }
-
         }
 
         System.out.println("Congratulations, " + username + "!");

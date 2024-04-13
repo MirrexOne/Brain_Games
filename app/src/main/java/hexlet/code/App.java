@@ -8,9 +8,7 @@ import hexlet.code.games.PrimeNumber;
 
 import java.util.Scanner;
 
-
 public class App {
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -47,6 +45,5 @@ public class App {
                 System.out.println("Nonexistent selection. Please, try again.");
                 break;
         }
-
     }
 }

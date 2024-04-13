@@ -24,8 +24,8 @@ public class Calculator {
             String correctAnswer = String.valueOf(providesCorrectAnswer(randomAction, numberOne, numberTwo));
             gameData[i][0] = numberOne + randomAction + numberTwo;
             gameData[i][1] = correctAnswer;
-
         }
+
         return gameData;
     }
 
