@@ -16,7 +16,6 @@ public class Engine {
 
         String correctAnswer;
         String answer;
-        int userWinsCount = 0;
         for (String[] gameDatum : gameData) {
             String question = gameDatum[0];
             System.out.println("Question: " + question);
@@ -29,14 +28,11 @@ public class Engine {
                         + "'" + correctAnswer + "'.\n" + "Let's try again, " + username + "!");
                 return;
             } else {
-                userWinsCount++;
                 System.out.println("Correct!");
             }
 
         }
 
-        if (userWinsCount == POINTS_TO_WIN) {
-            System.out.println("Congratulations, " + username + "!");
-        }
+        System.out.println("Congratulations, " + username + "!");
     }
 }
