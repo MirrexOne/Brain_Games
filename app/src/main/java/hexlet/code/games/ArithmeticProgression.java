@@ -27,7 +27,7 @@ public class ArithmeticProgression {
             int randomIndex = Utils.generateRandomNumber(progression.length);
             String correctHiddenElement = progression[randomIndex];
             progression[randomIndex] = "..";
-            gameData[i][0] = convertToString(progression);
+            gameData[i][0] = String.join(" ", progression);
             gameData[i][1] = correctHiddenElement;
 
         }
@@ -42,16 +42,6 @@ public class ArithmeticProgression {
         }
 
         return progression;
-    }
-
-    private static String convertToString(String[] progressionArray) {
-        StringBuilder builder = new StringBuilder();
-
-        for (String value : progressionArray) {
-            builder.append(value).append(" ");
-        }
-
-        return builder.toString();
     }
 
 }
