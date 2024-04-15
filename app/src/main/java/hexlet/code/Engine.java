@@ -4,12 +4,13 @@ import java.util.Scanner;
 
 public class Engine {
     public static final int POINTS_TO_WIN = 3;
-    private static final Scanner SCANNER = new Scanner(System.in);
 
     public static void checkResponseCorrectness(String gameRules, String[][] gameData) {
+        Scanner scanner = new Scanner(System.in);
+
         System.out.println("\n" + "Welcome to the Brain Games!");
         System.out.print("May I have your name? ");
-        String username = SCANNER.nextLine();
+        String username = scanner.nextLine();
         System.out.println("Hello, " + username + "!");
         System.out.println(gameRules);
 
@@ -19,7 +20,7 @@ public class Engine {
             String question = gameDatum[0];
             System.out.println("Question: " + question);
             System.out.print("Your answer: ");
-            answer = SCANNER.nextLine();
+            answer = scanner.nextLine();
             correctAnswer = gameDatum[1];
 
             if (!answer.equals(correctAnswer)) {
