@@ -8,7 +8,7 @@ public class GreatestCommonDivider {
     private static final int QUANTITY_OF_QUESTIONS = Engine.POINTS_TO_WIN;
     private static final int PAIRS_QUESTION_ANSWER = 2;
 
-    public static void launchGCDGame() {
+    public static void run() {
         String[][] gameData = generateGameData();
         Engine.checkResponseCorrectness(GAME_RULES_DESCRIPTION, gameData);
     }

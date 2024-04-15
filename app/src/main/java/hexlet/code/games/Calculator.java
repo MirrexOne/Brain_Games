@@ -9,7 +9,7 @@ public class Calculator {
     private static final int PAIRS_QUESTION_ANSWER = 2;
     private static final String[] SET_OF_ACTIONS = {" + ", " - ", " * "};
 
-    public static void launchExpressionGame() {
+    public static void run() {
         String[][] gameData = generateGameData();
         Engine.checkResponseCorrectness(GAME_RULES_DESCRIPTION, gameData);
     }

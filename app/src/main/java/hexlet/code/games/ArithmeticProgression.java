@@ -12,7 +12,7 @@ public class ArithmeticProgression {
     private static final int UPPER_BOUND_SIZE = 10;
     private static final int GENERATION_CAP_DIFFERENCE = 5;
 
-    public static void launchExpressionGame() {
+    public static void run() {
         String[][] gameData = generateGameData();
         Engine.checkResponseCorrectness(GAME_RULES_DESCRIPTION, gameData);
     }

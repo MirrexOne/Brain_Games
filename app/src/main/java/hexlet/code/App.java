@@ -24,19 +24,19 @@ public class App {
                 Cli.greeting();
                 break;
             case "2":
-                Even.launchEvenGame();
+                Even.run();
                 break;
             case "3":
-                Calculator.launchExpressionGame();
+                Calculator.run();
                 break;
             case "4":
-                GreatestCommonDivider.launchGCDGame();
+                GreatestCommonDivider.run();
                 break;
             case "5":
-                ArithmeticProgression.launchExpressionGame();
+                ArithmeticProgression.run();
                 break;
             case "6":
-                PrimeNumber.launchEvenGame();
+                PrimeNumber.run();
                 break;
             case "0":
                 System.out.println("See you later. Bye.");

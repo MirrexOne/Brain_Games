@@ -9,7 +9,7 @@ public class Even {
     private static final int QUANTITY_OF_QUESTIONS = Engine.POINTS_TO_WIN;
     private static final int PAIRS_QUESTION_ANSWER = 2;
 
-    public static void launchEvenGame() {
+    public static void run() {
         String[][] gameData = generateGameData();
         Engine.checkResponseCorrectness(GAME_RULES_DESCRIPTION, gameData);
     }
