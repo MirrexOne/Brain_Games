@@ -8,7 +8,7 @@ This project is soft-training tool for your *brain*.
 It has a few simple games, that provide different ways to stretch your *mind*.
 
 ###### *What type of games are featured in the project ?*
-Math-based games whose rounds are represented by expressions to which you have to calculate the correct answer.
+Math-based games those rounds are represented by expressions to which you have to calculate the correct answer.
 
 ###### *What are the rules of the games ?*
 The rules are incredibly easy, simple and clear.  
